@@ -1,6 +1,7 @@
 ##########
 # - Integrate with dotfiles
 # - [Y/n] for Ruby, PostgreSQL, MySQL
+# - I think there is an issue with running this more than once? (specifically vim issues)
 ##########
 
 echo "Doing Debian Updates ..."
@@ -10,8 +11,17 @@ aptitude dist-upgrade > /dev/null 2>&1
 aptitude autoclean    > /dev/null 2>&1
 aptitude full-upgrade > /dev/null 2>&1
 
-echo "Installing Packages"
-aptitude -y install laptop-detect libgl1-mesa-dri libparse-debianchangelog-perl uuid-runtime xfonts-base gnupg-curl oss-compat pulseaudio-esound-compat upower libreadline5 telnet libsqlite-dev sqlite sqlite-doc default-jre-headless xrdp > /dev/null 2>&1
+echo "Installing Base Packages"
+aptitude -y install laptop-detect libgl1-mesa-dri libparse-debianchangelog-perl uuid-runtime xfonts-base gnupg-curl oss-compat pulseaudio-esound-compat upower libreadline5 xrdp > /dev/null 2>&1
+
+echo "Installing Standard Tools"
+aptitude -y install irssi telnet dnsutils
+
+echo "Installing JRE"
+aptitude -y install default-jre-headless
+
+echo "Installing SQLite"
+aptitude -y install libsqlite-dev sqlite sqlite-doc
 
 echo "Installing Development Environment"
 aptitude -y install vim git git-all tmux subversion
