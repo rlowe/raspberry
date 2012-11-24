@@ -3,4 +3,8 @@ raspberry
 
 First script to run after setting up SD for Raspberry Pi
 
-curl -Lo- 
+Usage
+=====
+
+curl -Lo- http://raw.github.com/rlowe/raspberry/master/raspberry-bootstrap |sudo bash
+
