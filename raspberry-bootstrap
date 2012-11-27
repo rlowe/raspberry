@@ -12,7 +12,7 @@ aptitude autoclean    > /dev/null 2>&1
 aptitude full-upgrade > /dev/null 2>&1
 
 echo "Installing Base Packages"
-aptitude -y install laptop-detect libgl1-mesa-dri libparse-debianchangelog-perl uuid-runtime xfonts-base gnupg-curl oss-compat pulseaudio-esound-compat upower libreadline5 xrdp libraspberrypi-doc  libraspberrypi-dev  libraspberrypi-bin libraspberrypi0 raspberrypi-bootloader > /dev/null 2>&1
+aptitude -y install laptop-detect libgl1-mesa-dri libparse-debianchangelog-perl uuid-runtime xfonts-base gnupg-curl oss-compat pulseaudio-esound-compat upower libreadline5 xrdp libraspberrypi-doc  libraspberrypi-dev  libraspberrypi-bin libraspberrypi0 raspberrypi-bootloader ffmpeg > /dev/null 2>&1
 
 echo "Installing Standard Tools"
 aptitude -y install irssi telnet dnsutils bluetooth
