@@ -18,7 +18,7 @@ echo "Installing Productivity Packages"
 sudo aptitude -y install chromium-browser openoffice.org gimp
 
 echo "Installing USB WLAN Firmware"
-sudo aptitude -y install zd1211-firmware firmware-ralink
+sudo aptitude -y install zd1211-firmware firmware-ralink firmware-realtek
 
 echo "Installing Web Servers"
 sudo aptitude -y install apache2 lighthttpd nginx
