@@ -15,7 +15,7 @@ echo "Installing Multimedia Packages"
 sudo aptitude -y install xrdp ffmpeg pulseaudio-esound-compat
 
 echo "Installing USB WLAN Firmware"
-sudo aptitude -y install zd1211-firmware
+sudo aptitude -y install zd1211-firmware firmware-ralink
 
 echo "Installing Languages (Ruby & Python)"
 sudo aptitude -y install ruby ruby-dev rubygems rdoc python 
