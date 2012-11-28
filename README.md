@@ -3,6 +3,8 @@ raspberry
 
 First script to run after setting up SD for Raspberry Pi
 
+This assumes AT LEAST a 16G SD card
+
 Usage
 =====
 

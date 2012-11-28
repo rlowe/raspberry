@@ -1,9 +1,9 @@
 echo "Doing Debian Updates (slow) ..."
-sudo aptitude -y update       
-sudo aptitude -y upgrade      
-sudo aptitude -y dist-upgrade 
-sudo aptitude -y autoclean    
-sudo aptitude -y full-upgrade 
+sudo aptitude -y update
+sudo aptitude -y upgrade
+sudo aptitude -y dist-upgrade
+sudo aptitude -y autoclean
+sudo aptitude -y full-upgrade
 
 echo "Installing Raspberry Pi Packages"
 sudo aptitude -y libraspberrypi-bin libraspberrypi0 raspberrypi-bootloader libraspberrypi-doc libraspberrypi-dev
@@ -12,10 +12,16 @@ echo "Installing Base Packages"
 sudo aptitude -y install libgl1-mesa-dri libparse-debianchangelog-perl uuid-runtime xfonts-base gnupg-curl oss-compat upower libreadline5
 
 echo "Installing Multimedia Packages"
-sudo aptitude -y install xrdp ffmpeg pulseaudio-esound-compat
+sudo aptitude -y install xrdp ffmpeg pulseaudio-esound-compat moc
+
+echo "Installing Productivity Packages"
+sudo aptitude -y install chromium-browser openoffice.org gimp
 
 echo "Installing USB WLAN Firmware"
 sudo aptitude -y install zd1211-firmware firmware-ralink
+
+echo "Installing Web Servers"
+sudo aptitude -y install apache2 lighthttpd nginx
 
 echo "Installing Languages (Ruby & Python)"
 sudo aptitude -y install ruby ruby-dev rubygems rdoc python 
@@ -45,18 +51,18 @@ echo "Installing MySQL 5.5"
 sudo aptitude -y install percona-toolkit mysql-client-5.5 mysql-server-5.5 mysql-server-core-5.5 mysql-source-5.5 libmysqlclient-dev
 
 echo "Setting up Ruby Gems"
-sudo gem install pg     
-sudo gem install mysql2 
-sudo gem install rake   
+sudo gem install pg
+sudo gem install mysql2
+sudo gem install rake
 
 echo "Setting up VIM (janus) ..."
 curl -Lo- http://bit.ly/janus-bootstrap | bash
 echo 'let NERDTreeShowHidden=1' >> ~/.vimrc
 
 echo "Doing Debian Updates (slow) ..."
-sudo aptitude -y update       
-sudo aptitude -y upgrade      
-sudo aptitude -y dist-upgrade 
-sudo aptitude -y autoclean    
-sudo aptitude -y full-upgrade 
+sudo aptitude -y update
+sudo aptitude -y upgrade
+sudo aptitude -y dist-upgrade
+sudo aptitude -y autoclean
+sudo aptitude -y full-upgrade
 
