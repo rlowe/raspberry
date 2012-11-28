@@ -23,8 +23,8 @@ sudo aptitude -y install zd1211-firmware firmware-ralink
 echo "Installing Web Servers"
 sudo aptitude -y install apache2 lighthttpd nginx
 
-echo "Installing Languages (Ruby & Python)"
-sudo aptitude -y install ruby ruby-dev rubygems rdoc python 
+echo "Installing Languages"
+sudo aptitude -y install ruby ruby-dev rubygems rdoc python php5 python-pygame python-rpi.gpio python3-rpi.gpio
 
 echo "Installing Standard Tools"
 sudo aptitude -y install irssi telnet dnsutils bluetooth
