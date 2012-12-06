@@ -50,10 +50,24 @@ sudo aptitude -y install postgresql-9.1 postgresql-client-9.1 postgresql-contrib
 echo "Installing MySQL 5.5"
 sudo aptitude -y install percona-toolkit mysql-client-5.5 mysql-server-5.5 mysql-server-core-5.5 mysql-source-5.5 libmysqlclient-dev
 
-echo "Setting up Ruby Gems"
+echo "Setting up Database Ruby Gems"
 sudo gem install pg
 sudo gem install mysql2
+
+echo "Setting up Standard Base Ruby Gems"
+sudo gem install json
+sudo gem install multi_json
+sudo gem install rdoc
 sudo gem install rake
+sudo gem install actionmailer
+sudo gem install activesupport
+sudo gem install activemodel
+sudo gem install actionpack
+sudo gem install activerecord
+sudo gem install activeresource
+
+echo "Setting up Rails"
+sudo gem install rails
 
 echo "Setting up VIM (janus) ..."
 curl -Lo- http://bit.ly/janus-bootstrap | bash
