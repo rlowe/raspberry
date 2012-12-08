@@ -33,7 +33,7 @@ echo "Installing JRE"
 sudo aptitude -y install default-jre-headless
 
 echo "Installing SQLite"
-sudo aptitude -y install libsqlite-dev sqlite sqlite-doc
+sudo aptitude -y install libsqlite-dev sqlite sqlite-doc libsqlite3-dev sqlite3 sqlite3-doc
 
 echo "Installing Development Environment"
 sudo aptitude -y install vim git git-all tmux screen subversion
@@ -72,6 +72,14 @@ sudo gem install rails
 echo "Setting up VIM (janus) ..."
 curl -Lo- http://bit.ly/janus-bootstrap | bash
 echo 'let NERDTreeShowHidden=1' >> ~/.vimrc
+
+echo "Stopping expensive services"
+sudo update-rc.d mysql remove
+sudo /etc/init.d/mysql stop
+sudo update-rc.d tor remove
+sudo /etc/init.d/tor stop
+sudo /etc/init.d/postgresql stop
+sudo update-rc.d postgresql remove
 
 echo "Doing Debian Updates (slow) ..."
 sudo aptitude -y update
