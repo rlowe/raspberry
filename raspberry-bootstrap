@@ -27,7 +27,7 @@ echo "Installing Languages"
 sudo aptitude -y install ruby ruby-dev rubygems rdoc python php5 python-pygame python-rpi.gpio python3-rpi.gpio
 
 echo "Installing Standard Tools"
-sudo aptitude -y install irssi telnet dnsutils bluetooth
+sudo aptitude -y install irssi telnet dnsutils bluetooth whois
 
 echo "Installing JRE"
 sudo aptitude -y install default-jre-headless
