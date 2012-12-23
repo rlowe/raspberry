@@ -67,6 +67,7 @@ sudo gem install activerecord
 sudo gem install activeresource
 
 echo "Setting up Rails"
+sudo aptitude -y install node
 sudo gem install rails
 
 echo "Setting up VIM (janus) ..."
