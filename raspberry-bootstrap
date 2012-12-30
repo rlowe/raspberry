@@ -9,7 +9,7 @@ echo "Installing Raspberry Pi Packages"
 sudo aptitude -y libraspberrypi-bin libraspberrypi0 raspberrypi-bootloader libraspberrypi-doc libraspberrypi-dev
 
 echo "Installing Base Packages"
-sudo aptitude -y install libgl1-mesa-dri libparse-debianchangelog-perl uuid-runtime xfonts-base gnupg-curl oss-compat upower libreadline5
+sudo aptitude -y install libgl1-mesa-dri libparse-debianchangelog-perl uuid-runtime xfonts-base gnupg-curl oss-compat upower libreadline5 sysv-rc-conf
 
 echo "Installing Multimedia Packages"
 sudo aptitude -y install xrdp ffmpeg pulseaudio-esound-compat moc
