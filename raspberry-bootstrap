@@ -41,8 +41,8 @@ sudo aptitude -y install vim git git-all tmux screen subversion
 echo "Installing System/Security"
 sudo aptitude -y install libpcap-dev libpcap-ruby python-libpcap bridge-utils tcpdump tor nmap python-nmap
 
-echo "Installing R"
-sudo aptitude -y install r-base r-base-core r-base-dev r-recommended
+echo "Installing R (enough for R Studio Server)"
+sudo aptitude -y install r-base r-base-core r-base-dev r-recommended gdebi-core libapparmor1
 
 echo "Installing PostgreSQL 9.1"
 sudo aptitude -y install postgresql-9.1 postgresql-client-9.1 postgresql-contrib-9.1 postgresql-doc-9.1 postgresql-server-dev-9.1
