@@ -89,3 +89,13 @@ sudo aptitude -y dist-upgrade
 sudo aptitude -y autoclean
 sudo aptitude -y full-upgrade
 
+echo "Installing rpi-update"
+sudo aptitude -y install ca-certificates git-core
+sudo wget https://raw.github.com/Hexxeh/rpi-update/master/rpi-update -O /usr/bin/rpi-update && sudo chmod +x /usr/bin/rpi-update
+
+echo "Updating firmware"
+sudo rpi-update
+
+echo "Rebooting Raspberry"
+sudo reboot
+
