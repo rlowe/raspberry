@@ -98,4 +98,3 @@ sudo rpi-update
 
 echo "Rebooting Raspberry"
 sudo reboot
-
