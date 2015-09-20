@@ -92,6 +92,7 @@ sudo aptitude -y full-upgrade
 echo "Install raspberry-motd"
 cd /etc/profile.d/
 wget https://raw.githubusercontent.com/wikijm/raspberrypi-motd/master/motd.sh
+chown root:root motd.sh
 chmod +x motd.sh
 
 echo "Installing rpi-update"
