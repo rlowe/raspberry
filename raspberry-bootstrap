@@ -102,8 +102,5 @@ sudo wget https://raw.github.com/Hexxeh/rpi-update/master/rpi-update -O /usr/bin
 echo "Updating firmware"
 sudo rpi-update
 
-echo "Define root password"
-sudo passwd root
-
 echo "Rebooting Raspberry"
 sudo reboot
